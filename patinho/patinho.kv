@@ -1,0 +1,20 @@
+<MyWidget>:
+    Button:
+        id: bt1
+        text: 'Start!'
+        size: root.size
+        font_size:self.width/6
+        on_press: root.count(self)
+        background_color: 1, 1, 1, 1
+        background_down: 'data/pato2.jpg'
+        color: 1, 1, .1, 1
+    Button:
+        text: 'Reset'
+        center_x: root.center_x
+        center_y: root.center_y/8
+        height: root.height*.05
+        on_press: root.reset()
+    Label:
+        id: lb1
+        text: str(0)
+        color: 1, 1, .1, 1
